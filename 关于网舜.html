@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+	作者：刘生华
+	时间：2017-06-06
+	描述：关于网舜
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于网舜</title>
+		<link rel="stylesheet" href="css/main.css" />
+			<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/bannerList.js" ></script>
+		<script type="text/javascript" src="js/effect.js" ></script>
+		<style type="text/css">
+			.banner {
+				margin: 0 auto;
+				margin-bottom: 80px;
+			    width: 70%;
+			    height: 240px;
+			    padding: 0;
+			}
+			.banner > ul > li  {
+			    float: left;
+			    height: 240px !important;
+			}
+			.banner  li a img{
+				float: left;
+			    width: 70% !important;
+			    height: 230px !important;
+			}
+			.left-btn,.right-btn {
+			    width: 60px;
+			    height: 60px;
+			    position: absolute;
+			    top: 50%;
+			    margin-top: -30px;
+			    right: 30px;
+			    cursor: pointer;
+			}
+			.left-btn {
+			    left: 30px;
+			}
+			
+			.dtxq{
+				width: 100%;
+				margin-left: 0;
+				background: url(img/gsjsbg.png) no-repeat ;
+				/*background: url(img/1.png) no-repeat ;*/
+				background-size: 100% 100%;
+			}
+			.dtxq .title{
+				margin-left: 10%;
+			}
+			.gyws .gsjj{
+				margin-left: 10%;
+			}
+			.qyzx{
+				text-align: center;
+			}
+			.qyzx h1{
+				margin-left: 50px;
+				margin-bottom:40px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dtxq">
+			<div class="title">
+				<img src="img/home.png" alt="" />
+				<span>首页&gt;<font>关于网舜</font></span>
+			</div>
+			<div class="gyws">
+				<div class="gsjj">
+					<h1><img src="img/gsjj.png"/></h1>
+					<div class="text">
+						<h2>我们是谁？</h2>
+						<h3><em>懂你所需，</em>做你所想</h3>
+						<p> 长沙网舜科技有限公司成立于2003年，是一家专门从事信息系统解决方案提
+							供、行业应用软件开发、软硬件系统集成的高新技术企业。 我们面向政府、
+							学校、医疗、商超、旅游等行业，提供智慧城市、智慧旅游、智慧政务、智
+							慧医疗等应用场景的一系列整合解决方案。公司秉持<strong>“严谨、创新、
+							高效、务实”</strong>的精神理念，致力于成为行业最具影响力的应用软件
+							解决方案提供商和信息融合服务供应商。</p>
+					</div>
+					<div class="video">
+						<embed align="middle" allowscriptaccess="sameDomain" 
+							flashvars="isAutoPlay=true" height="100%" quality="high" 
+							src="http://player.youku.com/player.php/sid/XODI0MDEzODI4/v.swf" 
+							type="application/x-shockwave-flash" width="100%" wmode="opaque">
+						</embed>
+					</div>
+					<div class="text">
+						<h2>我们能做什么？</h2>
+						<ol>
+							<li><a href="#">提供行业解决方案></a></li>
+							<li><a href="#">系统集成类软件</a></li>
+							<li><a href="#">硬件设备代理</a></li>
+							<li><a href="#">项目合作支持项目外包</a></li>
+						</ol>
+					</div>
+					<div class="video">
+						<img src="img/doWhat.png"/>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+			<div class="gswh">
+				<h1><img src="img/two.png"/></h1>
+			</div>
+			<div class="fzlc">
+				<h1><img src="img/three.png"/></h1>
+			</div>
+			<div class="qyzx">
+				<h1><img src="img/gszx.png"/></h1>
+				<div class="banner">
+			        <ul>
+			            <li><a href=""><img src="img/bannerOne.png" alt=""></a></li>
+			            <li><a href=""><img src="img/bannerT.png" alt=""></a></li>
+			            <!--<li><a href=""><img src="img/bannerTh.png" alt=""></a></li>-->
+			        </ul>
+			        <div class="left-btn"></div>
+			        <div class="right-btn"></div>
+			        <div class="img-btn-list"></div>
+    			</div>
+			</div>
+			
+		<footer>
+			<div class="info">
+				<p><span>公司邮箱：netide@mail.netide.net</span><span class="addM">服务热线：400-0787-318 | 0731-85539429  85091329</span></p>
+				<p>公司地址：长沙市芙蓉区人瑞潇湘国际2216</p>
+				<p style="color: #686868;">© 2009-2017 Aliyun.com 版权所有 ICP证：湘B2-20080101</p>
+			</div>
+			<div class="imgBox">
+				<img src="img/ewm.png"/>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$('.page span').mouseover(function(){
+			$(this).addClass('on');
+		});
+		$('.page span').mouseout(function(){
+			$(this).removeClass('on');
+		})
+		bannerListFn(
+		    $(".banner"),
+		    $(".img-btn-list"),
+		    $(".left-btn"),
+		    $(".right-btn"),
+		    3000,
+		    true
+		);
+	</script>
+</html>

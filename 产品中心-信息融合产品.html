@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+	作者：刘生华
+	时间：2017-06-15
+	描述：信息融合中心
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>信息融合中心</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	</head>
+	<body>
+		<div class="dtxq">
+			<div class="title">
+				<img src="img/home.png" alt="" />
+				<span>首页&gt;<font>产品中心&gt;信息融合中心</font></span>
+			</div>
+			<div class="jjfa">
+				<div class="list">
+					<div class="left">
+						<img src="img/pdyyphxt.png"/>
+					</div>
+					<div class="right">
+						<h1>排队预约叫号系统</h1>
+						<p>长沙网舜科技排队预约叫号系统适用于服务行业办事大厅，如政府、金融、医院、邮政、通信、工商、税务、保险、交通等多个领域单位的排队预约叫号，系统支持窗口预约、电话预约、网上预约、微信公众号预约、手机APP预约等，系统不但可以创造轻松的排队环境，给客户优质的服务，还可以提高服务部门的形象面貌，提高工作效率。</p>
+					</div>
+				</div>
+				<div class="list">
+					<div class="left">
+						<h1>综合支付平台</h1>
+						<p>     为了方便用户接入后能更好的管理应用和交易信息，长沙网舜科技综合支付平台提供了应用中心帮助用户查询订单、绘制报表、配置支付通道及代理申请支付通道等。提供应用中心，平台支持支付宝、微信、百度钱包、Apple Pay等各个支付通道下的账户，管理各应用和各个支付通道的交易信息。</p>
+					</div>
+					<div class="right">
+						<img src="img/zhzfpt.png"/>
+						
+					</div>
+				</div>
+				<div class="list">
+					<div class="left">
+						<img src="img/dzscyw.png"/>
+					</div>
+					<div class="right">
+						<h1>电子商城运维</h1>
+						<p>    电子商务平台是面向企业、个人建立在互联网上进行商务活动的交易平台，可以实现B2B、B2C和C2C三种应用模式。
+长沙网舜科技有限公司有着多年的专业运维经验和运维团队。以业务数据和应用性能监控数据为基础，通过大数据采集、处理、分析、预测，把分析结果即时呈现在可视化大屏上，为各级运营和管理人员能够准确了解业务波动与IT系统的关联关系，从而作出准确的业务决策。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="twoList" id="twoList">
+		<ul>
+			<li class="one">行业解决方案</li>
+			<li class="two on">信息融合产品</li>
+		</ul>
+	</div>
+		<footer>
+			<div class="info">
+				<p><span>公司邮箱：netide@mail.netide.net</span><span class="addM">服务热线：400-0787-318 | 0731-85539429  85091329</span></p>
+				<p>公司地址：长沙市芙蓉区人瑞潇湘国际2216</p>
+				<p style="color: #686868;">© 2009-2017 Aliyun.com 版权所有 ICP证：湘B2-20080101</p>
+			</div>
+			<div class="Box">
+				<img src="img/ewm.png"/>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var l=$(window.parent.document).find('.pro').offset().left;
+			$('#twoList').css('left',l+'px');
+		$('.one').click(function(){
+			var src='产品中心.html';
+			$(window.parent.document).find('#main').attr('src',src)
+		});
+	</script>
+</html>
